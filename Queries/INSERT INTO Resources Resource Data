@@ -1,0 +1,22 @@
+INSERT INTO Resources (Category, Resource1, Resource2, Resource3)
+VALUES ('Food', 'Greater Cleveland Food Bank', 'Hunger Network of Greater Cleveland', 'Society of St Vincent de Paul Cleveland'),
+       ('Transportation', 'United Way-Lyft Partnership Program', 'Provide a Ride', 'Senior Transportation Connection'),
+       ('Internet Access', 'EmpowerCLE+', 'Connecting to Possibility (AT&T-Metrohealth Partnership)', 'Affordable Connectivity Program'),
+       ('Housing Stability', 'CHN Housing Partners', 'The City Mission', 'Neighborhood Alliance'),
+       ('Housing Problems', 'Home Repair Resource Center', 'Step Forward Energy Assistance Programs', 'Lakewood Christian Service Center'),
+       ('Personal Safety', 'Haven House Family Shelter', 'Journey Center for Safety & Healing', 'TherapyTribe'),
+       ('Financial Stability', 'United Way', 'Benjamin Rose Institute on Aging - Financial Wellness', 'Economic Security Project'),
+       ('Employment', 'Towards Employment', 'Recovery Resources - Employment Assistance Program', 'Workforce Opportunity Resource Center'),
+       ('Education', 'College Now Greater Cleveland', 'Cleveland Foundation - Say Yes Cleveland Program', 'Education Opportunity Center'),
+       ('Stress', 'University Hospitals - SMART Program', 'The Centers - Behavioral Health Sector', 'Cleveland Clinic - Wellness & Preventative Medicine Department'),
+       ('Social Connections', 'Behavioral Health Services of Greater Cleveland', 'Neighbor Up - Neighborhood Connections Program', 'Greater Cleveland Volunteers'),
+       ('Physical Activity', 'YMCA of Greater Cleveland', 'Cleveland Fit for Life', 'CareSource - Fitness Program');
+
+
+
+
+
+
+
+
+

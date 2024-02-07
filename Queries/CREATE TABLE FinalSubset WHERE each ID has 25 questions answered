@@ -1,0 +1,18 @@
+CREATE TABLE FinalSubset AS 
+SELECT *
+FROM (
+    SELECT *,
+    ROW_NUMBER() OVER (PARTITION BY ID, QUESTION_ID) AS QuestionRank
+    FROM (
+        SELECT *
+        FROM MainMapped
+        WHERE RESULTS_NAME IS NOT NULL AND ID IN (
+            SELECT ID
+            FROM MainMapped
+            WHERE RESULTS_NAME IS NOT NULL
+            GROUP BY ID
+            HAVING COUNT(DISTINCT QUESTION_ID) >= 25
+            )
+    )
+)
+WHERE QuestionRank = 1;

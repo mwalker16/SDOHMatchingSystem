@@ -1,0 +1,20 @@
+INSERT INTO IndividualScoring (ID, Category, Score)
+SELECT ID, 'Food', Food FROM ScoringMechanism
+UNION ALL
+SELECT ID, 'Transportation', Transportation FROM ScoringMechanism
+UNION ALL
+SELECT ID, 'InternetAccess', InternetAccess FROM ScoringMechanism
+UNION ALL
+SELECT ID, 'HousingStability', HousingStability FROM ScoringMechanism
+UNION ALL
+SELECT ID, 'HousingProblems', HousingProblems FROM ScoringMechanism
+UNION ALL
+SELECT ID, 'PersonalSafety', PersonalSafety FROM ScoringMechanism
+UNION ALL
+SELECT ID, 'FinancialStability', FinancialStability FROM ScoringMechanism
+UNION ALL
+SELECT ID, 'Stress', Stress FROM ScoringMechanism
+UNION ALL
+SELECT ID, 'SocialConnections', SocialConnections FROM ScoringMechanism
+UNION ALL
+SELECT ID, 'PhysicalActivity', PhysicalActivity FROM ScoringMechanism

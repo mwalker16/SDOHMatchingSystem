@@ -1,0 +1,3 @@
+SELECT 
+    (SELECT COUNT(*) FROM Referrals) AS TotalCount,
+    (SELECT COUNT(DISTINCT ID) FROM Referrals) AS DistinctCount;

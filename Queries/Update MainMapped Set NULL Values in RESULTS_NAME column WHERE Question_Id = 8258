@@ -1,0 +1,16 @@
+UPDATE MainMapped
+SET RESULTS_NAME = NULL
+WHERE QUESTION_ID = 8258
+  AND RESULTS IN ('NA', 'Not asked', 'Prefer not to answer')
+  OR ROWID IN (
+    SELECT ROWID
+    FROM MainMapped
+    WHERE QUESTION_ID = 8258 AND ID IN (
+        SELECT ID FROM HousingProblems
+        WHERE NA = 1 AND ID NOT IN (
+            SELECT ID
+            FROM MainMapped
+            WHERE QUESTION_ID = 8258 AND RESULTS IN ('NA', 'Not asked', 'Prefer not to answer')
+        )
+    )
+);

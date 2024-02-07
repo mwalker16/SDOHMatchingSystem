@@ -1,0 +1,10 @@
+UPDATE MainMapped
+SET AGE = 
+    CASE
+        WHEN AGE = 'NA' THEN NULL
+        ELSE CAST(AGE AS INTEGER)
+    END;
+
+/*
+Must go into database schema after running this query and change AGE column from TEXT to INT type
+*/

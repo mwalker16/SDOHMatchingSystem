@@ -1,0 +1,5 @@
+CREATE TABLE RankedScores AS
+SELECT I.ID, I.Category, I.Score, R.Rank
+FROM IndividualScoring I LEFT JOIN RankedCategories R
+ON I.ID = R.ID AND I.Category = R.Category
+WHERE SCORE > 0
